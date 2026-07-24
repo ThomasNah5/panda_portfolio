@@ -2,6 +2,14 @@
 import portfolioImages from '~/data/portfolio-images.json'
 
 const images = portfolioImages
+
+function imageSrc(filename: string) {
+  return `/images/${encodeURIComponent(filename)}`
+}
+
+function imageDetailPath(filename: string) {
+  return `/portfolio_piece?image=${encodeURIComponent(filename)}`
+}
 </script>
 
 <template>
@@ -23,10 +31,10 @@ const images = portfolioImages
         v-for="image in images"
         :key="image"
         class="group mb-4 break-inside-avoid overflow-hidden bg-neutral-900 shadow-lg transition hover:shadow-xl cursor-pointer"
-        @click="navigateTo(`/portfolio_piece?image=${image}`)"
+        @click="navigateTo(imageDetailPath(image))"
       >
         <img
-          :src="`/images/${image}`"
+          :src="imageSrc(image)"
           :alt="image.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ')"
           class="w-full object-cover transition duration-300 group-hover:scale-[1.03]"
           loading="lazy"

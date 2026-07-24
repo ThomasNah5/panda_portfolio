@@ -17,7 +17,7 @@ const imageName = image?.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ') || 'Portf
       
       <div v-if="image" class="bg-neutral-900 shadow-xl overflow-hidden">
         <img
-          :src="`/images/${image}`"
+          :src="`/images/${encodeURIComponent(image)}`"
           :alt="imageName"
           class="w-full object-cover"
         >
