@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data: images } = await useFetch<string[]>('/api/images')
+import portfolioImages from '~/data/portfolio-images.json'
+
+const images = portfolioImages
 </script>
 
 <template>
