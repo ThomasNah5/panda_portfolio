@@ -1,18 +1,9 @@
 <template>
-  <div class="flex flex-col min-h-[calc(100dvh-3.5rem)] items-center justify-center p-4 md:min-h-full md:p-8">
-    <NuxtImg
-      src="/logo/Let thy will be done.png"
-      alt="Logo"
-      class="max-w-[300px] w-auto h-auto mb-4 rotate-90"
-      format="webp"
-      densities="1x 2x"
-    />
-    <NuxtImg
+  <div class="flex min-h-[calc(100dvh-3.5rem)] items-center justify-center p-4 md:min-h-full md:p-8">
+    <img
       src="/images/home.jpeg"
       alt="Image 1"
       class="h-auto w-full max-h-[calc(100dvh-5rem)] object-cover object-center md:max-h-[calc(100vh-4rem)] md:h-[calc(100vh-4rem)]"
-      format="webp"
-      densities="1x 2x"
-    />
+    >
   </div>
 </template>
