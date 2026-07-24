@@ -12,7 +12,7 @@ const imageName = image?.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ') || 'Portf
         @click="navigateTo('/portfolio')"
         class="mb-6 text-sm text-neutral-500 hover:text-black transition"
       >
-        ← Back to Portfolio
+        ← Back
       </button>
       
       <div v-if="image" class="bg-neutral-900 shadow-xl overflow-hidden">
