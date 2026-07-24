@@ -68,11 +68,11 @@ function toggleMenu() {
       class="sidebar fixed inset-y-0 left-0 z-50 flex h-full w-64 -translate-x-full flex-col overflow-hidden border-r border-gray-200 bg-gray-50 p-6 transition-transform duration-300 md:static md:z-auto md:translate-x-0 md:flex-shrink-0"
       :class="{ 'translate-x-0': isMenuOpen }"
     >
-      <img
+      <NuxtLink to="/"><img
         src="/logo/Logo.jpeg"
         alt="Logo"
         class="hidden h-[90px] w-full max-w-[300px] object-contain md:block"
-      >
+      /></NuxtLink>
       <nav class="pt-4 md:pt-8">
         <ul>
           <li>
