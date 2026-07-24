@@ -3,9 +3,6 @@ import portfolioImages from '~/data/portfolio-images.json'
 
 const images = portfolioImages
 
-function imageSrc(filename: string) {
-  return `/images/${encodeURIComponent(filename)}`
-}
 
 function imageDetailPath(filename: string) {
   return `/portfolio_piece?image=${encodeURIComponent(filename)}`
@@ -33,12 +30,14 @@ function imageDetailPath(filename: string) {
         class="group mb-4 break-inside-avoid overflow-hidden bg-neutral-900 shadow-lg transition hover:shadow-xl cursor-pointer"
         @click="navigateTo(imageDetailPath(image))"
       >
-        <img
-          :src="imageSrc(image)"
+        <NuxtImg
+          :src="image"
           :alt="image.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ')"
           class="w-full object-cover transition duration-300 group-hover:scale-[1.03]"
           loading="lazy"
-        >
+          format="webp"
+          densities="1x 2x"
+        />
       </figure>
     </div>
 

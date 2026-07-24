@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ['@nuxt/fonts'],
+  modules: ['@nuxt/image', '@nuxt/fonts'],
 
   hooks: {
     'build:before': generateImagesManifest,

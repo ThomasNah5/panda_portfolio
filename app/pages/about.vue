@@ -7,7 +7,7 @@
             People call the things I make art, but I prefer to think of them as my little experiments, 
             each one an opportunity to explore, question, and discover something new.
         </h1>
-        <img src="/images/home.jpeg" alt="About" class="w-96 h-96 object-cover mt-4 hidden md:block">
+        <NuxtImg src="/images/home.jpeg" alt="About" class="w-96 h-96 object-cover mt-4 hidden md:block" format="webp" densities="1x 2x" />
     </div>
 </template>
   

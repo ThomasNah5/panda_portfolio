@@ -16,11 +16,13 @@ const imageName = image?.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ') || 'Portf
       </button>
       
       <div v-if="image" class="bg-neutral-900 shadow-xl overflow-hidden">
-        <img
-          :src="`/images/${encodeURIComponent(image)}`"
+        <NuxtImg
+          :src="image"
           :alt="imageName"
           class="w-full object-cover"
-        >
+          format="webp"
+          densities="1x 2x"
+        />
         <div class="p-6">
           <h2 class="text-2xl font-bold text-white capitalize">
             {{ imageName }}
