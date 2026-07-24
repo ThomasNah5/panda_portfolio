@@ -23,11 +23,6 @@ const imageName = image?.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ') || 'Portf
           format="webp"
           densities="1x 2x"
         />
-        <div class="p-6">
-          <h2 class="text-2xl font-bold text-white capitalize">
-            {{ imageName }}
-          </h2>
-        </div>
       </div>
       
       <p v-else class="text-center text-neutral-500">
