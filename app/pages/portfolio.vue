@@ -31,7 +31,7 @@ function imageDetailPath(filename: string) {
         @click="navigateTo(imageDetailPath(image))"
       >
         <NuxtImg
-          :src="image"
+          :src="`/images/${image}`"
           :alt="image.replace(/\.[^.]+$/, '').replace(/[_-]/g, ' ')"
           class="w-full object-cover transition duration-300 group-hover:scale-[1.03]"
           loading="lazy"
