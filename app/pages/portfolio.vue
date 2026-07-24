@@ -27,7 +27,7 @@ function imageDetailPath(filename: string) {
       <figure
         v-for="image in images"
         :key="image"
-        class="group mb-4 break-inside-avoid overflow-hidden bg-neutral-900 shadow-lg transition hover:shadow-xl cursor-pointer"
+        class="group mb-4 break-inside-avoid overflow-hidden bg-neutral-400 shadow-lg transition hover:shadow-xl cursor-pointer"
         @click="navigateTo(imageDetailPath(image))"
       >
         <NuxtImg
