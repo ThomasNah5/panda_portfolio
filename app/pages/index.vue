@@ -1,5 +1,12 @@
 <template>
-  <div class="flex min-h-[calc(100dvh-3.5rem)] items-center justify-center p-4 md:min-h-full md:p-8">
+  <div class="flex flex-col min-h-[calc(100dvh-3.5rem)] items-center justify-center p-4 md:min-h-full md:p-8">
+    <NuxtImg
+      src="/logo/Let thy will be done.png"
+      alt="Logo"
+      class="max-w-[300px] w-auto h-auto mb-4 rotate-90"
+      format="webp"
+      densities="1x 2x"
+    />
     <NuxtImg
       src="/images/home.jpeg"
       alt="Image 1"
